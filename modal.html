@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+  
+
+.w-8 {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right:8px;
+
+}
+
+
+    .semi-bold{
+    font-weight: 700 !important;
+    font-size: 18px;
+    line-height: 24px;
+    color: #404040;
+    
+    }
+    
+    .modal-title1{
+         font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #51B389;
+        margin: auto;
+        margin-left: 0;
+    }
+    
+    .mt-10 {
+        margin-top: 10rem;
+    }
+   .modal-pera{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #808080;
+
+     }
+  
+
+    .mb-24{
+        margin-bottom:24px;
+    }
+     
+.w-8 {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right:8px;
+    }
+</style>
+
+<div class="modal-dialog modal-dialog-centered" style="width:700px; height:494px">
+    <div class="modal-content">
+        <div class="modal-header border-bottom-0"> 
+            <h4 class="modal-title p-0 " id="exampleModalToggleLabel">
+                Upload Self Photograph<br />
+                <span class="f16 text-gray mb-28">Please upload self photograph, considering the guidelines given below.</span>
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-8">
+          <p class="f16">Guidelines for photograph
+                    </p>
+                    <ul class="list-doc2">
+                             <li> Acceptable dimensions (600x600) to (1200x1200).</li>
+                             <li>The photo should capture full face, front view, with eyes open</li>
+                             <li>The head should be in the centere of the frame.</li>
+                             <li>There should be no distracting shadows on the face or background.</li>
+                             <li>The light should be even and balanced to avoid shadows on the face.</li>
+                             <li>The eyes must be open, level and clearly visible and must not be covered by hairs or eyeglass frames.</li>
+                         </ul>
+                  </div>
+                <div class="col-4">
+              <p><img src="./modal-userimagewrong.png" class="img-fluid"></p>
+              <p><img src="./modal-userimagewrong.png" class="img-fluid"></p>
+        </div>
+        <div class="modal-footer border-top-0 mt-0">
+            <button class="btn btn-modal_border "  style=" width:82px; height:40px;" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height:40px;" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Got It</button>
+        </div>
+    </div>
+</div>
+ </div>
+        </div>
+
+
+<!--
+ <div class="modal fade mt-10" id="add-invite-for-form" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"  tabindex="-1">
+    <div class="modal-dialog modal-sm modal-dialog-centered" style="width:509px; height:208px;">
+  <div class="modal-content rounded">
+    <div class="header border-bottom-0">
+      <h4 class="modal-title p-4 mt-2" id="exampleModalToggleLabel">Declaration </h4>
+      </div>
+    <div class="modal-body">
+        <p class="modal-pera"> I declare that all of the data provided is accurate and to the best of my knowledge.</p>
+    </div>
+    <div class="modal-footer border-top-0">
+        <button class="btn btn-custom1 btn-sm"  style="height:40px; width:82px" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-custom" style="height:40px; width:180px;" data-bs-toggle="modal">Agree and Submit</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade mt-10" id="error_list" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"  tabindex="-1">
+    <div class="modal-dialog modal-sm modal-dialog-centered" style="width: 700px; height: 245px;">
+  <div class="modal-content rounded">
+    <div class="header border-bottom-0">
+      <h4 class="modal-title p-4 mt-2 text-danger" id="exampleModalToggleLabel"><span><img src="/images/alert_ic.png" class="indicator m-0"/></span> Error list</h4>
+      </div>
+    <div class="modal-body">
+        <p class="modal-pera"> Missing, incorrect or year gap has been identified please consider filling those inputs correctly or else give reason to justify the error.
+             <h6> <span class="rounded-circle w-8 bg-dark"></span> Aadhaar Card <span><img src="~/images/information.png" class="indicator ms-2 "/></span></h6>
+    </div>
+    <div class="modal-footer border-top-0">
+        <button class="btn btn-custom1 btn-sm"  style="width: 123px; height: 40px;" data-bs-dismiss="modal">Give Reason</button>
+        <button class="btn btn-custom" style="height:40px; width:180px;" data-bs-toggle="modal">Fill Inputs</button>
+    </div>
+     </div>
+   </div>
+</div>
+
+
+<div class="modal-dialog modal-sm modal-dialog-centered" style="width:700px; height:288px;">
+    <div class="modal-content rounded">
+        <div class="modal-header border-bottom-0 ">
+            <h2 class="semi-bold-head" id="exampleModalToggleLabel">Reason to justify errors</h2>
+        </div>
+        <div class="modal-body m-3 p-1">
+            <h6 class="second-heading">Missing Inputs</h6>
+            <div class="design-process-content">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="form-group mb-0 ">
+                            <label class="w-100">Aadhaar Card</label>
+                            <input type="text" id="years-experience" class="form-control shadow-none"
+                                placeholder="Type reason for not filling the input...">
+                        </div>
+                        <div class="form-group mb-0 ">
+                            <label class="w-100">university</label>
+                            <input type="text" id="years-experience" class="form-control shadow-none"
+                                placeholder="Type reason for not filling the input...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer border-top-0 pt-0">
+            <button class="btn btn-custom1" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-custom " data-bs-dismiss="modal"
+                data-bs-toggle="modal">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
+-->
+
+
+
+<div class="modal fade mt-10" id="submit" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"  tabindex="-1">
+    <div class="modal-dialog modal-sm modal-dialog-centered" style="width:509px; height:208px;">
+ <div class="modal-content rounded">
+    <div class="header border-bottom-0">
+    <h4 class="modal-title p-4 mt-2 mb-0" id="exampleModalToggleLabel">Check for the Auto-filled Data</h4>
+    </div>
+    <div class="modal-body">
+        <p class="modal-pera"> Some data has been auto-filled from the previous steps, please re-view and proceed with filling the missing data.</p>
+    </div>
+    <div class="modal-footer border-top-0">
+        <button class="btn btn-custom" style="height:40px; width:69px;" data-bs-toggle="modal">Okay</button>
+    </div>
+</div>
+</div>
+</div>

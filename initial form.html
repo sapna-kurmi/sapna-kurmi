@@ -1,0 +1,407 @@
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+  <style>
+    .semi-bold-head {
+    font-weight: 700 !important;
+    font-size: 24px;
+    line-height: 32px;
+    color: #404040;
+    padding: 1rem;
+    }
+    .modal-title1{
+         font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #51B389;
+        margin: auto;
+        margin-left: 0;
+    }
+    
+    .mt-10 {
+        margin-top: 10rem;
+    }
+   .modal-pera{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #808080;
+
+     }
+   label {
+    margin-bottom: 8px;
+    color: #595959;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+   }
+     .form-control{
+         border-radius:8px
+     }
+     .mb-28{
+        margin-bottom: 1rem;
+     }
+     .second-heading{
+        font-size: 18px;
+        font-weight: 500 !important;
+        color: #404040;
+    }
+    .mb-24{
+        margin-bottom:24px;
+    }
+      .rounded{
+            border-radius: 16px !important;
+        }
+
+.w-8 {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right:8px;
+
+}
+
+
+
+  </style>
+ <div class="container-fluid bg-white pt-3 py-2 border-bottom mt-8">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-1">
+                    <a href="~/Home/Index"><img src="~/images/back_arrow.png" /></a>
+                </div>
+                <div class="col-md-11">
+                    <h6 class="mt-2 f12">Fill the Initial Candidate Data</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">&nbsp;</div>
+        <div class="col-md-4">
+            <a data-bs-toggle="modal" data-bs-target="#add-invite-for-form" href="#add-invite-for-form" class="btn btn-custom btn-sm mt-2 float-end">Add & Invite for Form</a>
+        </div>
+    </div>
+</div>
+ <div class="container-fluid">
+    <div class="tab-content mt-0 p-3">
+        <div role="tabpanel" class="tab-pane active" id="basic">
+            <h4 class="semi-bold-head">Fill the Initial Candidate Data</h4>
+        </div>
+        <div class="design-process-content mb-36">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <h5 class="second-heading mb-24">Basic Candidate Details</h5>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">First Name</label>
+                        <input type="text" id="fname" class="form-control shadow-none space"
+                            placeholder="name  :candidate " />
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Middle Name
+                            <small class="float-end font-weight-normal"><i>Optional</i></small></label>
+                        <input type="text" id="midName" class="form-control shadow-none"
+                            placeholder="Enter middle name of candidate" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Last Name </label>
+                        <input type="text" id="lname" class="form-control shadow-none"
+                            placeholder="Enter last name of candidate" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Mail ID</label>
+                     <input type="email" id="email" class="form-control shadow-none"
+                            placeholder="Enter email of candidate" />
+                    </div>
+                </div>
+               
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Contact Number</label>
+                        <input type="tel" id="contact" class="form-control shadow-none"
+                            placeholder="Enter phone number" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100"> Alternate Contact Number</label>
+                        <input type="tel" id="contact" class="form-control shadow-none"
+                            placeholder="Enter phone number" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Designation</label>
+                        <input type="text" id="designation" class="form-control shadow-none"
+                            placeholder="Enter designation of candidate" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Level</label>
+                        <input type="text" id="level" class="form-control shadow-none"
+                            placeholder="Example: Intern/ Manager/ etc." />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Aadhaar Card </label>
+                        <input type="file" id="aadhaar_card" class="form-control shadow-none"
+                            placeholder="Upload aadhaar card" />
+                    </div>
+                </div>
+                <div class="col-md-12 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Description Note
+                            <small class="float-end font-weight-normal"><i>Optional</i></small></label>
+                        <textarea id="description" class="form-control shadow-none">Write under 150 - 200 words...</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--official ddetails-->
+        <div class="design-process-content mb-36">
+            <div class="row">
+                <div>
+                    <h4 class="semi-bold2 py-2">Official Details</h4>
+                </div>
+            </div>
+            <div class="col-md-12 col-12">
+                <h5 class="second-heading mb-24">Basic Official Details</h5>
+                <div class="design-process-content mb-28">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Date Of Joining</label>
+                                <input type="text" id="d.o.j" class="form-control shadow-none"
+                                    placeholder="Enter D.O.J" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Type</label>
+                                <input type="text" id="worktype" class="form-control shadow-none"
+                                    placeholder="Enter work type" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Work Location</label>
+                                <input type="text" id="worklocation" class="form-control shadow-none"
+                                    placeholder="Enter state name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Payroll Area</label>
+                                <input type="text" id="payrollarea" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Department</label>
+                                <input type="text" id="department" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Role</label>
+                                <input type="text" id="role" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Role</label>
+                                <select id="role" class="form-select shadow-none">
+                                    <option>Select</option>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Grade</label>
+                                <input type="text" id="grade" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Eligibility for ESIC?</label>
+                               <select id="esic" class="form-select shadow-none">
+                                    <option>Select</option>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+
+                <!--organisation details-->
+                <div class="col-md-12 col-12">
+                    <h5 class="second-heading mb-35">Organization Details</h5>
+                    <div class="design-process-content mb-28">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-28">
+                                    <label class="w-100">Head Company</label>
+                                    <input type="text" id="headcompany" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-28">
+                                    <label class="w-100">Company Name</label>
+                                    <input type="text" id="companyname" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-28">
+                                    <label class="w-100">Location</label>
+                                    <input type="text" id="location" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-28">
+                                    <label class="w-100">Line of business</label>
+                                    <input type="text" id="location" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-28">
+                                    <label class="w-100">Organization</label>
+                                    <input type="text" id="organization" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+
+                    <!--Manager details-->
+                    <div class="col-md-12 col-12">
+                        <h5 class="second-heading mb-35">Manager Details</h5>
+                        <div class="design-process-content mb-28">
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Full Name</label>
+                                        <input type="text" id="fullname" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Designation</label>
+                                        <input type="text" id="designationmanager" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Location</label>
+                                        <input type="text" id="location" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Department</label>
+                                        <input type="text" id="department" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Employee Type</label>
+                                        <input type="text" id="employeetype" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Function Supervisor</label>
+                                        <input type="text" id="functionsupervisor" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Reports To</label>
+                                        <input type="text" id="reportsto" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="form-group mb-28">
+                                        <label class="w-100">Organisation Chart</label>
+                                        <input type="file" id="organisationchart" class="form-control shadow-none"
+                                            placeholder="Placeholder" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+       <!--******-->
+     
+  </div>
+
+
+
+
+  <!--*****modal for invitation-->
+    <div class="modal fade mt-10" id="add-invite-for-form" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"  tabindex="-1">
+    <div class="modal-dialog modal-sm modal-dialog-centered" style="width:700px; height:208px;">
+  <div class="modal-content rounded">
+    <div class="header border-bottom-0">
+      <h4 class="modal-title p-4 mt-2 text-danger" id="exampleModalToggleLabel"><span><img src="/images/alert_ic.png" class="indicator m-0"/></span> Error list</h4>
+      </div>
+    <div class="modal-body">
+        <p class="modal-pera"> Missing, incorrect or year gap has been identified please consider filling those inputs correctly or else give reason to justify the error.
+             <h6> <span class="rounded-circle w-8 bg-dark"></span> Aadhaar Card <span><img src="~/images/information.png" class="indicator ms-2 "/></span></h6>
+
+    </div>
+    <div class="modal-footer border-top-0">
+        <button class="btn btn-custom1 btn-sm"  style="width: 123px; height: 40px;" data-bs-dismiss="modal">Give Reason</button>
+        <button class="btn btn-custom" style="height:40px; width:180px;" data-bs-toggle="modal">Fill Inputs</button>
+    </div>
+  </div>
+</div>
+   </div>
+
+

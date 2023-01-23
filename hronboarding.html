@@ -1,0 +1,2093 @@
+<!--start employment -->
+<style>
+    
+    .semi-bold-head {
+    font-weight: 700 !important;
+    font-size: 24px;
+    line-height: 32px;
+    color: #404040;
+    padding: 1rem;
+    }
+
+
+    .semi-bold{
+    font-weight: 700 !important;
+    font-size: 18px;
+    line-height: 24px;
+    color: #404040;
+    
+    }
+    
+    .modal-title1{
+         font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #51B389;
+        margin: auto;
+        margin-left: 0;
+    }
+    
+    .mt-10 {
+        margin-top: 10rem;
+    }
+   .modal-pera{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #808080;
+
+     }
+   label {
+    margin-bottom: 8px;
+    color: #595959;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+   }
+     .form-control{
+         border-radius:8px
+     }
+     .mb-24{
+        margin-bottom: 1rem;
+     }
+     .second-heading{
+        font-size: 18px;
+        font-weight: 500 !important;
+        color: #404040;
+    }
+
+    .mb-24{
+        margin-bottom:24px;
+    }
+      .rounded{
+            border-radius: 16px !important;
+        }
+
+.w-8 {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right:8px;
+    }
+
+
+     .btn-custom-add {
+        background-color: #fff !important;
+        border: 2px solid #4B5EAA !important;
+        /*padding: 0.5rem !important;*/
+        line-height: normal !important;
+        color: #4B5EAA !important;
+        border-radius: 8px !important;
+        outline: none;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        right: 0;
+        top: 0;
+        top: 0;
+    }
+</style>
+
+
+<!--basic-->
+<div role="tabpanel" class="tab-pane active" id="basic">
+    <h4 class="semi-bold">Basic @*<a data-bs-toggle="modal" href="#error_list" role="button">Error List</a>*@</h4>
+    <div class="design-process-content mb-36 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Personal Details</h5></div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">First Name</label>
+                    <input type="text" id="fname" class="form-control shadow-none success_field" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Middle Name <small class="float-end font-weight-normal"><i>Optional</i></small></label>
+                    <input type="text" id="midName" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Last Name </label>
+                    <input type="text" id="lname" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Gender</label>
+                    <select id="gender" class="form-select  form-control shadow-none">
+                        <option>-Select-</option>
+                        <option selected="selected">Male</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Date of Birth </label>
+                    <input type="date" id="d_o_b" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Blood Group</label>
+                    <select id="blood_group" class="form-select  form-control shadow-none">
+                        <option>-Select-</option>
+                        <option selected="selected">B (+ve)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Marital Status</label>
+                    <select id="marital_status" class="form-select  form-control shadow-none">
+                        <option>-Select-</option>
+                        <option selected="selected">Single</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Nationality</label>
+                    <select id="nationality" class="form-select  form-control shadow-none">
+                        <option>-Select-</option>
+                        <option selected="selected">Indian</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Aadhaar Card </label>
+                    <input type="file" id="aadhaar_card" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Self Photograph</label>
+                    <input type="file" id="self_photograph" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-12 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Self Brief <small class="float-end font-weight-normal"><i>Optional</i></small></label>
+                    <textarea id="self_brief" class="form-control shadow-none">Write under 150 - 200 words...</textarea>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="design-process-content mb-24 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Language Known</h5></div>
+            <div class="col-md-12 col-12">
+                <div class="table-responsive">
+                    <table class="table table-language">
+                        <thead>
+                            <tr class="text-uppercase">
+                                <th style="width:8%;">S.No.</th>
+                                <th style="width:25%;">Language Name</th>
+                                <th>Reading</th>
+                                <th>Writing</th>
+                                <th>Speaking</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>English</td>
+                                <td><input type="checkbox" checked="checked" /></td>
+                                <td><input type="checkbox" checked="checked" /></td>
+                                <td><input type="checkbox" checked="checked" /></td>
+                                <td><a href="#" class="btn btn-link p-0"><img src="~/images/close_ic.png" /></a></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Hindi</td>
+                                <td><input type="checkbox" checked="checked" /></td>
+                                <td><input type="checkbox" checked="checked" /></td>
+                                <td><input type="checkbox" checked="checked" /></td>
+                                <td><a href="#" class="btn btn-link p-0"><img src="~/images/close_ic.png" /></a></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    <select id="language" class="form-select  form-control shadow-none">
+                                        <option>-Select Language-</option>
+                                    </select>
+                                </td>
+                                <td><input type="checkbox" /></td>
+                                <td><input type="checkbox" /></td>
+                                <td><input type="checkbox" /></td>
+                                <td><a href="#" class="btn btn-link p-0"><img src="~/images/close_ic.png" /></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-12" style="text-align:center;">
+                <a href="#" class="btn btn-custom-add"><img src="~/images/plus_ic.png" class="mr-2" /> Add Known Language</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--contact-->
+<div role="tabpanel" class="tab-pane" id="contact">
+    <h4 class="semi-bold">Contact Details</h4>
+    <div class="design-process-content mb-24 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Personal Contact Details</h5></div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Personal Mail ID</label>
+                    <input type="text" id="p_mailid" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Personal Phone Number</label>
+                    <input type="text" id="pp_number" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Alternate Phone Number  <small class="float-end font-weight-normal"><i>Optional</i></small></label>
+                    <input type="text" id="ap_number" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="add_field" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="add_field1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="add_field2" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-12 col-12">
+                <h6 class="sub_head_text">Emergency Contact</h6>
+                <div class="design-process-content">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Name</label>
+                                <input type="text" id="contact_name" class="form-control shadow-none" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Relation</label>
+                                <input type="text" id="contact_relation" class="form-control shadow-none" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Phone Number</label>
+                                <input type="text" id="contact_phone" class="form-control shadow-none" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Alternate Phone Number  <small class="float-end font-weight-normal"><i>Optional</i></small></label>
+                                <input type="text" id="contact_ap_number" class="form-control shadow-none" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Additional Field</label>
+                                <input type="text" id="contact_add_field" class="form-control shadow-none" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-28">
+                                <label class="w-100">Additional Field</label>
+                                <input type="text" id="contact_add_field1" class="form-control shadow-none" />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="design-process-content mb-24 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Current Address</h5></div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Address line 1</label>
+                    <input type="text" id="address1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Address line 2</label>
+                    <input type="text" id="address2" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">City</label>
+                    <input type="text" id="city" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">State</label>
+                    <input type="text" id="state" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Country</label>
+                    <input type="text" id="country" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Zip Code</label>
+                    <input type="text" id="zip_code" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Electricity Bill</label>
+                    <input type="file" id="electricity_bill" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field2" class="form-control shadow-none" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="design-process-content mb-24 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Permanent Address</h5></div>
+            <div class="col-md-12 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100"><input type="checkbox" /> Mark if same as Current Address</label>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Address line 1</label>
+                    <input type="text" id="p_address1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Address line 2</label>
+                    <input type="text" id="p_address2" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">City</label>
+                    <input type="text" id="p_city" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">State</label>
+                    <input type="text" id="p_state" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Country</label>
+                    <input type="text" id="p_country" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Zip Code</label>
+                    <input type="text" id="p_zip_code" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Electricity Bill</label>
+                    <input type="file" id="p_electricity_bill" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-12 col-12"></div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="p_additional_field" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="p_additional_field1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="p_additional_field2" class="form-control shadow-none" />
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<!--family-->
+<div role="tabpanel" class="tab-pane" id="family">
+    <h4 class="semi-bold">Family Details</h4>
+    <div class="design-process-content mb-24 p-2">
+        <div class="row" id="familymember">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Family Member 1</h5></div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Name</label>
+                    <input type="text" id="family_name" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Relation</label>
+                    <input type="text" id="family_relation" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Date of Birth</label>
+                    <input type="date" id="family_dob" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Blood Group</label>
+                    <select id="family_bloodGroup" class="form-select   form-control shadow-none">
+                        <option>-Select-</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Nationality</label>
+                    <input type="text" id="family_nationality" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Occupation</label>
+                    <input type="text" id="family_occupation" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Date of Marriage</label>
+                    <input type="text" id="family_do_marriage" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Phone Number</label>
+                    <input type="text" id="family_phone" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Alternate Phone Number <small class="float-end font-weight-normal"><i>Optional</i></small></label>
+                    <input type="text" id="family_alt_phone" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="family_additional_field" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="family_additional_field1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="family_additional_field2" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-12 col-12 mb-4" style="text-align:center;">
+                <a href="#" class="btn btn-custom-add" id="add_family_member"><img src="/images/plus_ic.png" class="mr-2"> Add Family Member</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<!--education-->
+<div role="tabpanel" class="tab-pane" id="education">
+    <h4 class="semi-bold">Education Details</h4>
+    <div class="design-process-content mb-24 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Degree / Diploma</h5></div>
+        </div>
+        <div class="row" id="add_degreeDetails">
+            <div class="col-md-12 col-12"><h6 class="f12 mb-36">Degree / Diploma 1</h6></div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Specialization</label>
+                    <input type="text" id="degree_specialization" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Diploma / Degree</label>
+                    <input type="text" id="degree_diploma" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">University</label>
+                    <input type="text" id="degree_University" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Month & Year of passing</label>
+                    <input type="date" id="degree_Month_Year_of_passing" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Score</label>
+                    <input type="text" id="degree_Score" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Upload Degree / Certificate</label>
+                    <input type="file" id="degree_upload_certi" class="form-control shadow-none" />
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="degree_additional_field" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="degree_additional_field1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="degree_additional_field2" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-12 col-12 mb-4" style="text-align:center;">
+                <a href="#" class="btn btn-custom-add" id="clone_degree"><img src="/images/plus_ic.png" class="mr-2"> Add Degree / Diploma Details</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="design-process-content mb-24 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Schooling</h5></div>
+            <div class="col-md-12 col-12"><h6 class="f12 mb-40">Standard - XII</h6></div>
+        </div>
+        <div class="design-process-content mb-24 p-2">
+            <div class="row">
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Education Board</label>
+                        <input type="text" id="XII_eduboard" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Education Stream</label>
+                        <input type="text" id="XII_edustream" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Institute</label>
+                        <input type="text" id="XII_institute" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Month & Year of passing</label>
+                        <input type="date" id="XII_Month_Year_of_passing" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Score</label>
+                        <input type="text" id="XII_Score" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Upload Mark Sheet / Certificate</label>
+                        <input type="file" id="XII_Upload_marksheet" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12 col-12"><h6 class="f12 mb-40">Standard -X</h6></div>
+        </div>
+        <div class="design-process-content">
+            <div class="row">
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Education Board</label>
+                        <input type="text" id="X_eduboard" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Education Stream</label>
+                        <input type="text" id="X_edustream" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Institute</label>
+                        <input type="text" id="X_institute" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Month & Year of passing</label>
+                        <input type="date" id="X_Month_Year_of_passing" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Score</label>
+                        <input type="text" id="X_Score" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group mb-28">
+                        <label class="w-100">Upload Mark Sheet / Certificate</label>
+                        <input type="file" id="X_Upload_marksheet" class="form-control shadow-none" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="design-process-content mb-24 p-2">
+        <div class="row">
+            <div class="col-md-12 col-12"><h5 class="f18 mb-40">Any Certifications</h5></div>
+        </div>
+        <div class="row" id="add_CertificationDetails">
+            <div class="col-md-12 col-12"><h6 class="f12 mb-36">Certification Details 1</h6></div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Certificate Name</label>
+                    <input type="text" id="Certification_name" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Certificate Provider</label>
+                    <input type="text" id="Certification_provider" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Start Date</label>
+                    <input type="date" id="Certification_startdate" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">End Date</label>
+                    <input type="date" id="Certification_enddate" class="form-control shadow-none" />
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Upload Certificate</label>
+                    <input type="file" id="Certification_upload_certi" class="form-control shadow-none" />
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="Certification_additional_field" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="Certification_additional_field1" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-28">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="Certification_additional_field2" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-12 col-12 mb-4" style="text-align:center;">
+                <a href="#" class="btn btn-custom-add" id="add_Certificate"><img src="/images/plus_ic.png" class="mr-2"> Add Certificate Details</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<!--start employment-->
+<div role="tabpanel" class="tab-pane" id="employment">
+    <h4 class="semi-bold">Employment</h4>
+    <div class="design-process-content mb-24">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group">
+                    <label class="w-100">Years of Experience</label>
+                    <input type="text" id="years-experience" class="form-control shadow-none"
+                        placeholder="Enter number of years">
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group">
+                    <label class="w-100">Worked With Mynd Before</label>
+                    <select id="workwith-mynd" class="form-select shadow-none">
+                        <option>Yes/ Yes</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="design-process-content mb-24">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h5 class="f18 mb-24">Current Employement</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Employment Type</label>
+                    <select id="employment-type" class="form-select shadow-none">
+                        <option>Select</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Company Name</label>
+                    <input type="text" id="company-name" class="form-control shadow-none"
+                        placeholder="Enter company name" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Joining Date</label>
+                    <input type="date" id="joining-date" class="form-control shadow-none" placeholder="DD/MM/YYYY" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Leaving Date</label>
+                    <input type="date" id="leaving-date" class="form-control shadow-none" placeholder="DD/MM/YYYY" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Department</label>
+                    <input type="text" id="department-name" class="form-control shadow-none"
+                        placeholder="Enter department name" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Designation</label>
+                    <input type="text" id="designation" class="form-control shadow-none"
+                        placeholder="Enter designation" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Company Contact Number</label>
+                    <input type="tel" id="company-contact" class="form-control shadow-none"
+                        placeholder="Enter mobile number" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h5 class="f16">Previous Three Months Salary Slips</h5>
+
+
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="form-group ">
+                                <label class="w-100">Salary Slip 1</label>
+                                <input type="file" id="salary-slip-1" class="form-control shadow-none" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group">
+                                <label class="w-100">Salary Slip 2</label>
+                                <input type="file" id="salary-slip-2" class="form-control shadow-none" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group">
+                                <label class="w-100">Salary Slip 3</label>
+                                <input type="file" id="salary-slip-3" class="form-control shadow-none" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Appointment Letter</label>
+                    <input type="file" id="appointment-letter" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Offer Letter</label>
+                    <input type="file" id="offer-letter" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Experience Letter</label>
+                    <input type="file" id="experience-letter" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional-field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional-field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional-field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="company-address">
+            <div class="col-md-12 col-12">
+                <h6 class="f16">Company Address</h6>
+
+                <div class="design-process-content mb-24 ">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <label class="w-100">Address Line 1</label>
+                                <input type="text" id="address-line-1" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <label class="w-100">Address line2</label>
+                                <input type="text" id="address-line-2" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-24">
+                                <label class="w-100">ZIP Code</label>
+                                <input type="text" id="zip-code" class="form-control shadow-none"
+                                    placeholder="Enter zip code" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-24">
+                                <label class="w-100">City</label>
+                                <input type="text" id="city-name" class="form-control shadow-none"
+                                    placeholder="Enter city name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group mb-24">
+                                <label class="w-100">State</label>
+                                <input type="text" id="state-name" class="form-control shadow-none"
+                                    placeholder="Enter state name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group ">
+                                <label class="w-100">Country</label>
+                                <input type="text" id="country-name" class="form-control shadow-none"
+                                    placeholder="Enter country name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group ">
+                                <label class="w-100">Additional Field</label>
+                                <input type="text" id="additional-field" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group ">
+                                <label class="w-100">Additional Field</label>
+                                <input type="text" id="additional-field" class="form-control shadow-none"
+                                    placeholder="Placeholder" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Reason For Leaving</label>
+                    <textarea id="reason-leaving"
+                        class="form-control shadow-none">Write under 50 - 150 words...</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h6 class="f16">Reference From Previous Company 1</h6>
+
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="form-group ">
+                                <label class="w-100">Name</label>
+                                <input type="text" id="name" class="form-control shadow-none"
+                                    placeholder="Enter full name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group">
+                                <label class="w-100">Designation</label>
+                                <input type="text" id="designation" class="form-control shadow-none"
+                                    placeholder="Enter designation" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group ">
+                                <label class="w-100">Phone Number</label>
+                                <input type="text" id="phone-number" class="form-control shadow-none"
+                                    placeholder="Enter mobile number" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-12" style="text-align:center;">
+                    <a href="#" class="btn btn-custom-add" id="add_reference_previous"><img src="/images/plus_ic.png"
+                            class="mr-2"> Add Reference</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--pervious employment-->
+    <div class="design-process-content mb-24">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h5 class="f18 mb-24">Previous Employment Details</h5>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Employment Type</label>
+                    <select id="employment-type" class="form-select shadow-none">
+                        <option>Select</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Company Name</label>
+                    <input type="text" id="company-name" class="form-control shadow-none"
+                        placeholder="Enter company name" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Joining Date</label>
+                    <input type="date" id="joining-date" class="form-control shadow-none" placeholder="DD/MM/YYYY" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Leaving Date</label>
+                    <input type="date" id="leaving-date" class="form-control shadow-none" placeholder="DD/MM/YYYY" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Department</label>
+                    <input type="text" id="department-name" class="form-control shadow-none"
+                        placeholder="Enter department name" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Designation</label>
+                    <input type="text" id="designation" class="form-control shadow-none"
+                        placeholder="Enter designation" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Company Contact Number</label>
+                    <input type="tel" id="company-contact" class="form-control shadow-none"
+                        placeholder="Enter mobile number" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h6 class="f16">Previous Three Months Salary Slips</h6>
+
+
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="form-group ">
+                                <label class="w-100">Salary Slip 1</label>
+                                <input type="file" id="salary-slip-1" class="form-control shadow-none" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group">
+                                <label class="w-100">Salary Slip 2</label>
+                                <input type="file" id="salary-slip-2" class="form-control shadow-none" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="form-group">
+                                <label class="w-100">Salary Slip 3</label>
+                                <input type="file" id="salary-slip-3" class="form-control shadow-none" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Appointment Letter</label>
+                    <input type="file" id="appointment-letter" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Offer Letter</label>
+                    <input type="file" id="offer-letter" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Experience Letter</label>
+                    <input type="file" id="experience-letter" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional-field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional-field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional-field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="row" id="company-address">
+                <div class="col-md-12 col-12">
+                    <h6 class="f16">Company Address</h6>
+
+                    <div class="design-process-content mb-24 ">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="form-group mb-24">
+                                    <label class="w-100">Address Line 1</label>
+                                    <input type="text" id="address-line-1" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="form-group mb-24">
+                                    <label class="w-100">Address line2</label>
+                                    <input type="text" id="address-line-2" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-24">
+                                    <label class="w-100">ZIP Code</label>
+                                    <input type="text" id="zip-code" class="form-control shadow-none"
+                                        placeholder="Enter zip code" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-24">
+                                    <label class="w-100">City</label>
+                                    <input type="text" id="city-name" class="form-control shadow-none"
+                                        placeholder="Enter city name" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group mb-24">
+                                    <label class="w-100">State</label>
+                                    <input type="text" id="state-name" class="form-control shadow-none"
+                                        placeholder="Enter state name" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group ">
+                                    <label class="w-100">Country</label>
+                                    <input type="text" id="country-name" class="form-control shadow-none"
+                                        placeholder="Enter country name" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group ">
+                                    <label class="w-100">Additional Field</label>
+                                    <input type="text" id="additional-field" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group ">
+                                    <label class="w-100">Additional Field</label>
+                                    <input type="text" id="additional-field" class="form-control shadow-none"
+                                        placeholder="Placeholder" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Reason For Leaving</label>
+                    <textarea id="reason-leaving"
+                        class="form-control shadow-none">Write under 50 - 150 words...</textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <h6 class="f16">Reference From Previous Company 1</h6>
+
+
+                    <div class="design-process-content mb-24">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="form-group ">
+                                    <label class="w-100">Name</label>
+                                    <input type="text" id="name" class="form-control shadow-none"
+                                        placeholder="Enter full name" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label class="w-100">Designation</label>
+                                    <input type="text" id="designation" class="form-control shadow-none"
+                                        placeholder="Enter designation" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group ">
+                                    <label class="w-100">Phone Number</label>
+                                    <input type="text" id="phone-number" class="form-control shadow-none"
+                                        placeholder="Enter mobile number" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12" style="text-align:center;">
+                        <a href="#" class="btn btn-custom-add" id="add_reference_previous"><img src="/images/plus_ic.png"
+                                class="mr-2"> Add Reference</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--end employment -->
+<!--start bank details -->
+<div role="tabpanel" class="tab-pane" id="bankDetails">
+    <h4 class="semi-bold">Bank Details</h4>
+    <div class="design-process-content">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Account Type</label>
+                    <select id="account_type" class="form-select shadow-none">
+                        <option>Select</option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Account Number</label>
+                    <input type="text" id="account_number" class="form-control shadow-none"
+                        placeholder="Enter account number" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Bank Name</label>
+                    <input type="text" id="bank_name" class="form-control shadow-none" placeholder="Enter bank name" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">IFS Code</label>
+                    <input type="text" id="ifs_code" class="form-control shadow-none" placeholder="Enter IFS code " />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Account Holder Name</label>
+                    <input type="text" id="account_holder_name" class="form-control shadow-none"
+                        placeholder="Enter account holder's name" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Canceled Cheque Photograph</label>
+                    <input type="file" id="canceled_cheque" class="form-control shadow-none" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">PAN Card</label>
+                    <input type="file" id="PAN_card" class="form-control shadow-none" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Universal Account Number(UAN)</label>
+                    <input type="text" id="UAN_number" class="form-control shadow-none"
+                        placeholder="Enter universal account number " />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--end bank details -->
+
+<!--other details start-->
+<div role="tabpanel" class="tab-pane" id="otherDetails">
+    <h4 class="semi-bold">Other Details</h4>
+    <div class="design-process-content mb-24">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="form-group mb-24">
+                    <label class="w-100">Additional Field</label>
+                    <input type="text" id="additional_field" class="form-control shadow-none"
+                        placeholder="Placeholder" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--other details end-->
+
+
+<!--perview form-->
+<div role="tabpanel" class="tab-pane" id="previewForms">
+    <div class="design-process-content mb-24">
+        <div class="row" id="basic_details">
+            <div class="col-md-12 col-12">
+                <h5 class="f16 mb-40">Basic Details <span><img src="/images/dropdown indicator.png"
+                            class="indicator float-end" /></span></h5>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="full_name" class="form-control shadow-none space\"
+                        placeholder="Full Name   : Jane Doe">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="gender" class="form-control shadow-none" placeholder="Gender  : Male">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="dob" class="form-control shadow-none"
+                        placeholder="Date of Birth  : 19/10/1998">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="blood-group" class="form-control shadow-none"
+                        placeholder="Blood Group : AB-">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="maritial_status" class="form-control shadow-none"
+                        placeholder="Marital Status  : Single">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="nationality" class="form-control shadow-none"
+                        placeholder="Nationality  : Indian">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="aadhaar_card" class="form-control shadow-none"
+                        placeholder=" Aadhaar Card No.  : 638246382">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="pan_card" class="form-control shadow-none"
+                        placeholder="Pan Card No.  : 7939368292 ">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="language" class="form-control shadow-none"
+                        placeholder="Language  :  1. Hindi (Reading, Writing, Speaking) " />
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="language" class="form-control shadow-none"
+                        placeholder="Language   : 2.English (Reading, Writing)">
+                </div>
+            </div>
+            <div class="col-md-12 col-12">
+                <div class="form-group mb-24">
+                    <textarea id="self_brief"
+                        class="form-control shadow-none">I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive towards. I am not comfortable with settling, and I am always looking for an opportunity to  do better and achieve greatness.</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="design-process-content mb-24">
+        <div class="row" id="contact_details">
+            <div class="col-md-12 col-12">
+                <h5 class="f18 mb-24">Contact Details <span><img src="/images/dropdown indicator.png"
+                            class="indicator float-end" /></span></h5>
+            </div>
+            <div class="col-md-12 col-12">
+                <h6 class="f16 ">Personal contact details</h6>
+
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="mail_id" class="form-control shadow-none"
+                                    placeholder="Mail ID  : pranay@myndsol.com ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="phone_number" class="form-control shadow-none"
+                                    placeholder=" Phone Number  : 7939368292  ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group ">
+                                <input type="text" id="contact_number" class="form-control shadow-none"
+                                    placeholder="  Alternate Number  : 7939368292  ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group ">
+                                <input type="file" id="photograph" class="form-control shadow-none"
+                                    placeholder=" Self Photograph  : View file  Download">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-12">
+                <h6 class="f16">Emergency Contact</h6>
+
+
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="fname" class="form-control shadow-none"
+                                    placeholder=" Name  : Full Name ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="relation" class="form-control shadow-none"
+                                    placeholder="  Relation  : Father ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="phone_number" class="form-control shadow-none"
+                                    placeholder=" Phone Number  : 7939368292  ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group ">
+                                <input type="text" id="contact_number" class="form-control shadow-none"
+                                    placeholder="  Alternate Number  : 7939368292  ">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-12">
+                <h6 class="f16 ">Current Address</h6>
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-12 col-12">
+                            <div class="form-group mb-24 ">
+                                <input type="text" id="add_line1" class="form-control shadow-none"
+                                    placeholder="  Address Line 1  :  Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678  ">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <div class="form-group mb-24 ">
+                                <input type="text" id="add_line2" class="form-control shadow-none"
+                                    placeholder="  Address Line 2  : Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678  ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24 ">
+                                <input type="text" id="city" class="form-control shadow-none"
+                                    placeholder="  City  : Grugram ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24 ">
+                                <input type="text" id="state" class="form-control shadow-none"
+                                    placeholder="  State :  Haryana ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24 ">
+                                <input type="text" id="country" class="form-control shadow-none"
+                                    placeholder="  Country  : India ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24 ">
+                                <input type="text" id="zip-code" class="form-control shadow-none"
+                                    placeholder="  ZIP Code  : 12001 ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <input type="file" id="electricity_bill" class="form-control shadow-none"
+                                    placeholder="  Electricity Bill  : View file  Download file ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="design-process-content mb-24">
+        <div class="row" id="family_details">
+            <div class="col-md-12 col-12">
+                <h5 class="f18 mb-24">Family Details <span><img src="/images/dropdown indicator.png"
+                            class="indicator float-end" /></span> </h5>
+            </div>
+            <div class="col-md-12 col-12">
+                <h6 class="f16 mb-24">Family Member 1</h6>
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="name" class="form-control shadow-none"
+                                    placeholder=" Name  : Full Name ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="relation" class="form-control shadow-none"
+                                    placeholder=" Relation  : Father ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="d.o.b" class="form-control shadow-none"
+                                    placeholder=" Date of Birth  : 19/10/1998 ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="blood_group" class="form-control shadow-none"
+                                    placeholder=" Blood Group  : AB- ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="nationality" class="form-control shadow-none"
+                                    placeholder="Nationality  : Indian ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="occupation" class="form-control shadow-none"
+                                    placeholder="Occupation  : Occupation ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="d.o.m" class="form-control shadow-none"
+                                    placeholder=" Date of Marriage  : 19/10/1998 ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="phone_number" class="form-control shadow-none"
+                                    placeholder=" Phone Number  : 8649263493">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <input type="text" id="alternate_number" class="form-control shadow-none"
+                                    placeholder=" Alternate Number  : 8649263493">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="design-process-content mb-24">
+        <div class="row" id="education_details">
+            <div class="col-md-12 col-12">
+                <h5 class="f18 mb-24">Education Details <span><img src="/images/dropdown indicator.png"
+                            class="indicator float-end" /></span></h5>
+                <div class="col-md-12 col-12">
+                    <h6 class="f16 mb-24">Degree / Diploma 1</h6>
+                </div>
+
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="specialization" class="form-control shadow-none"
+                                    placeholder=" Specialization  : Product Design">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="degree_diploma" class="form-control shadow-none"
+                                    placeholder=" Degree / Diploma  : Degree / Diploma Name ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="university" class="form-control shadow-none"
+                                    placeholder=" University  : University Name ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="date_of_Passing" class="form-control shadow-none"
+                                    placeholder=" Date of Passing  : 10/1998  ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <input type="text" id="score" class="form-control shadow-none"
+                                    placeholder=" Score  : Percentage / CGPA">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group ">
+                                <input type="text" id="degree_certificate" class="form-control shadow-none"
+                                    placeholder=" Degree / Certificate  : View file  Download">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="design-process-content mb-24">
+        <div class="row" id="employment_details">
+            <div class="col-md-12 col-12">
+                <h5 class="f18 mb-24">Employment Details <span><img src="/images/dropdown indicator.png"
+                            class="indicator float-end" /></span></h5>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24">
+                    <input type="text" id="years_of_experience" class="form-control shadow-none"
+                        placeholder="  Years of Experience  : 4 Years">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group mb-24 ">
+                    <input type="text" id="worked_with_MYND" class="form-control shadow-none"
+                        placeholder=" Worked with MYND  : Yes">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-12">
+            <h6 class="f16">Current Employment Details</h6>
+        </div>
+        <div class="design-process-content mb-24">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="employment_type" class="form-control shadow-none"
+                            placeholder="  Employment Type  : Full Time">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="joining_date" class="form-control shadow-none"
+                            placeholder=" Joining Date  : 10/1998">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="leaving_date" class="form-control shadow-none"
+                            placeholder="  Leaving Date  : 10/1998">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="department" class="form-control shadow-none"
+                            placeholder="  Department  : Department Name">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="designation" class="form-control shadow-none"
+                            placeholder=" Designation  : Designation">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="phone_number" class="form-control shadow-none"
+                            placeholder="  Phone Number  : 9090978922">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="reference_number" class="form-control shadow-none"
+                            placeholder="  Reference Number  : 8649263493">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="salary_slips" class="form-control shadow-none"
+                            placeholder="  Salary Slips  : View file Download ">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="appointment_letter" class="form-control shadow-none"
+                            placeholder="  Appointment Letter  : View file Download ">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="offer_letter" class="form-control shadow-none"
+                            placeholder="   Offer Letter  : View file Download ">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="experience_letter" class="form-control shadow-none"
+                            placeholder="  Experience Letter  : View file Download  ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-12 col-12">
+            <h6 class="f16">Previous Employment Details</h6>
+        </div>
+        <div class="design-process-content mb-24">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="employment_type" class="form-control shadow-none"
+                            placeholder="  Employment Type  : Full Time">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="joining_date" class="form-control shadow-none"
+                            placeholder=" Joining Date  : 10/1998">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="leaving_date" class="form-control shadow-none"
+                            placeholder="  Leaving Date  : 10/1998">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="department" class="form-control shadow-none"
+                            placeholder="  Department  : Department Name">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="designation" class="form-control shadow-none"
+                            placeholder=" Designation    : Designation">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="phone_number" class="form-control shadow-none"
+                            placeholder="  Phone Number  : 9090978922">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="reference_number" class="form-control shadow-none"
+                            placeholder="  Reference Number : 8649263493">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="salary_slips" class="form-control shadow-none"
+                            placeholder="  Salary Slips  : View file Download ">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="appointment_letter" class="form-control shadow-none"
+                            placeholder="  Appointment Letter  : View file Download ">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="offer_letter" class="form-control shadow-none"
+                            placeholder="   Offer Letter  : View file Download ">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group mb-24 ">
+                        <input type="text" id="experience_letter" class="form-control shadow-none"
+                            placeholder="  Experience Letter  : View file Download  ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="design-process-content mb-24">
+        <div class="row" id="bank_details">
+            <div class="col-md-12 col-12">
+                <h5 class="f18 mb-24">Bank Details <span><img src="/images/dropdown indicator.png"
+                            class="indicator float-end" /></span></h5>
+
+                <div class="design-process-content mb-24">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="account_type" class="form-control shadow-none"
+                                    placeholder=" Account Type  : Savings">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="account_number" class="form-control shadow-none"
+                                    placeholder="  Account Number  : 637292924382  ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="bank_name" class="form-control shadow-none"
+                                    placeholder=" Bank Name  : PNB Bank ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group mb-24">
+                                <input type="text" id="IFS_code" class="form-control shadow-none"
+                                    placeholder=" IFS Code  : 873290237 ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <input type="text" id="account_holder" class="form-control shadow-none"
+                                    placeholder=" Account Holder  : Full Name  ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group ">
+                                <input type="text" id="canceled_cheque" class="form-control shadow-none"
+                                    placeholder=" Canceled Cheque : View File  Download">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--preview form end-->

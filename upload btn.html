@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<style>
+
+
+ul.modal-list li {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #404040;
+list-style: disc;
+}
+</style>
+<div class="col-md-10">
+  <div class="tab-content mt-0 p-24">	
+  
+    <!--basic tab-->
+     <div class="design-process-content mb-24">
+      <div class="row">
+        <h4 class=" mb-36" id="basic_documents"> Upload Basic Documents</h4></div>
+        <div class="row">
+                     <div class="col-6">
+                        <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span>Self Photograph</p>
+                             <ul class="modal-list">
+                                  <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                  <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                              </ul>
+                            <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span>Aadhaar Card</p>
+                                    <ul class="modal-list">
+                                        <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                    </ul>
+                                </div>
+                        <div class="col-6 modal_bg">
+                            <DIV id="dropzone">
+                                <FORM class="dropzone needsclick" style="height:358px;" id="demo-upload" action="/upload">
+                                    <DIV class="dz-message needsclick f16">
+                                        Drag and drop file<BR>
+                                        <SPAN class="note needsclick mb-24">
+                                            Or use Download button.
+                                        </SPAN>  <br>
+                                           <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 24px;" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                    </DIV>
+                                 </FORM>
+                                </DIV>
+                          </div>
+                     </div>
+     </div>
+     <div class="design-process-content mb-24">
+        <div class="row">
+          <h4 class=" mb-24" id="employment_documents">  Upload Basic Documents</h4>
+         </div>
+             <div class="row">
+                   <div class="col-6">
+                    <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Self Photograph<span class="text-opt float-end">Data Extracted</span></p>
+                     <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Aadhaar Card<span class="text-opt float-end">Data Extracted</span></p>
+                 </div>
+                      <div class="col-6 modal_bg">
+                          <DIV id="dropzone">
+                              <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                  <DIV class="dz-message needsclick f16">
+                                      Drag and drop file<BR>
+                                      <SPAN class="note needsclick mb-24">
+                                          Or use Download button.
+                                      </SPAN>  <br>
+                                         <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                  </DIV>
+                               </FORM>
+                              </DIV>
+                        </div>
+                  </div>
+     </div>
+
+
+
+     <!--education-->
+         <div class="design-process-content mb-24">
+          <div class="row">
+            <h4 class=" mb-24" id="education_documents">
+           Upload Education Documents<br /> </h4>
+          </div>
+               <div class="row">
+                     <div class="col-6">
+                        <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span>10th Marksheet</p>
+                             <ul class="modal-list">
+                                  <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                  <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                              </ul>
+                            <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span>12th Markshee</p>
+                                    <ul class="modal-list">
+                                        <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                    </ul>
+                                 <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> Degree/Diploma</span> </p>
+                                    <ul class="modal-list">
+                                       <li> Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                         <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                         <li>Multiple files allowed.</li>
+                                  </ul>
+                                </div>
+                        <div class="col-6 modal_bg">
+                            <DIV id="dropzone">
+                                <FORM class="dropzone needsclick" style="height:358px;" id="demo-upload" action="/upload">
+                                    <DIV class="dz-message needsclick f16">
+                                        Drag and drop file<BR>
+                                        <SPAN class="note needsclick mb-24">
+                                            Or use Download button.
+                                        </SPAN>  <br>
+                                           <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 24px;" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                    </DIV>
+                                 </FORM>
+                                </DIV>
+                              
+                          </div>
+                </div>
+
+         </div>
+         <div class="design-process-content mb-24">
+            <div class="row">
+              <h4 class=" mb-24" id="employment_documents"> Upload Education Documents</h4>
+             </div>
+                 <div class="row">
+                       <div class="col-6">
+                        <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Appointment Letter <span class="text-opt float-end">Data Extracted</span></p>
+                         <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Offer Letter<span class="text-opt float-end">Data Extracted</span></p>
+                          <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Offer Letter<span class="text-opt float-end">Data Extracted</span></p>
+                     </div>
+                          <div class="col-6 modal_bg">
+                              <DIV id="dropzone">
+                                  <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                      <DIV class="dz-message needsclick f16">
+                                          Drag and drop file<BR>
+                                          <SPAN class="note needsclick mb-24">
+                                              Or use Download button.
+                                          </SPAN>  <br>
+                                             <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                      </DIV>
+                                   </FORM>
+                              </DIV>
+                         </div>
+                  </div>
+         </div>
+           
+         <!--employment-->
+         <div class="design-process-content mb-24">
+          <div class="row">
+            <h4 class=" mb-24" id="employment_documents">Upload Current Employment Documents</h4>
+           </div>
+               <div class="row">
+                     <div class="col-6">
+                        <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span> Appointment Letter</p>
+                             <ul class="modal-list">
+                                  <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                  <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                              </ul>
+                             <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span> Offer Letter</p>
+                                    <ul class="modal-list">
+                                        <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                    </ul>
+                                 <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"></span> Experience Letter</p>
+                                    <ul class="modal-list">
+                                       <li> Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                         <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                         <li>Multiple files allowed.</li>
+                                  </ul>
+                                   <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span> Salary Slip </p>
+                                    <ul class="modal-list">
+                                       <li> Last 3 month salary slip in separate files</li>
+                                         <li> Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                         <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                  </ul>
+                                </div>
+                        <div class="col-6 modal_bg">
+                            <DIV id="dropzone">
+                                <FORM class="dropzone needsclick" style="height:358px;" id="demo-upload" action="/upload">
+                                    <DIV class="dz-message needsclick f16">
+                                        Drag and drop file<BR>
+                                        <SPAN class="note needsclick mb-24">
+                                            Or use Download button.
+                                        </SPAN>  <br>
+                                           <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 24px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                    </DIV>
+                                 </FORM>
+                           </DIV>
+                     </div>
+                </div>
+           </div>
+         <div class="design-process-content mb-24">
+            <div class="row">
+              <h4 class=" mb-24" id="employment_documents">Upload Current Employment Documents<br /> </h4>
+             </div>
+                 <div class="row">
+                       <div class="col-6">
+                        <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Appointment Letter<span class="text-opt float-end">Data Extracted</span></p>
+                         <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Offer Letter<span class="text-opt float-end">Data Extracted</span></p>
+                           <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Experience Letter <span class="text-opt float-end">Data Extracted</span></p>
+                             <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Salary Slip <span class="text-opt float-end">Data Extracted</span></p>
+                                  </div>
+                          <div class="col-6 modal_bg">
+                              <DIV id="dropzone">
+                                  <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                      <DIV class="dz-message needsclick f16">
+                                          Drag and drop file<BR>
+                                          <SPAN class="note needsclick mb-24">
+                                              Or use Download button.
+                                          </SPAN>  <br>
+                                             <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                      </DIV>
+                                   </FORM>
+                                  </DIV>
+                         </div>
+                  </div>
+         </div>
+        
+        <!--bank-->
+         <div class="design-process-content mb-24">
+          <div class="row">
+            <h4 class=" mb-24" id="bank_documents">Upload Bank Documents </h4>
+           </div>
+               <div class="row">
+                     <div class="col-6">
+                        <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span>Canceled Cheque Photograph </p>
+                             <ul class="modal-list">
+                                  <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                  <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                              </ul>
+                             <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span> PAN Card</p>
+                                    <ul class="modal-list">
+                                        <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                    </ul>
+                                </div>
+                        <div class="col-6 modal_bg">
+                            <DIV id="dropzone">
+                                <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                    <DIV class="dz-message needsclick f16">
+                                        Drag and drop file<BR>
+                                        <SPAN class="note needsclick mb-24">
+                                            Or use Download button.
+                                        </SPAN>  <br>
+                                           <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 24px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                    </DIV>
+                                 </FORM>
+                                </DIV>
+                           </div>
+                     </div>
+         </div>
+         <div class="design-process-content mb-24">
+            <div class="row">
+                 <h4 class=" mb-24" id="bank_documents">Upload Bank Documents </h4>
+                </div>
+            <div class="row">
+                  <div class="col-6">
+                     <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Canceled Cheque Photograph <span class="text-opt float-end">Data Extracted</span></p>
+                          <p class="f16 mb-0"><span><img src="~/images/green-radio.png"> </span> PAN Card <span class="text-opt float-end">Data Extracted</span></p>
+                      </div>
+                      <div class="col-6 modal_bg">
+                         <DIV id="dropzone">
+                             <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                 <DIV class="dz-message needsclick f16">
+                                     Drag and drop file<BR>
+                                     <SPAN class="note needsclick mb-24">
+                                         Or use Download button.
+                                     </SPAN>  <br>
+                                        <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom:16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                 </DIV>
+                              </FORM>
+                             </DIV>
+                        </div>
+                  </div>
+         </div>
+        
+</div>
+</div>
+</body>
+
+
+@{
+    ViewData["Title"] = "Document Upload";
+    }
+    <style>
+    
+    ul.modal-list li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    list-style: disc;
+    }
+    .w-8 {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        margin-right:8px;
+        }
+    </style>
+    <div class="container-fluid bg-white pt-0 py-2 border-bottom mt-0">
+        <div class="row">
+            <div class="col-6 col-md-5">
+                <div class="row mt-2">
+                    <div class="col-8 col-md-12"><a href="~/Home/Index" class="mx-0 ms-4 float-start"><img
+                                src="~/images/chevron-left.png"></a>
+                        <h6 class="f16">Fill the Requirements</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-7">
+                <div class="row">
+                    <div class="col-md-6 px-0">&nbsp;</div>
+                    <div class="col-md-6">
+                      
+                        <a data-bs-toggle="modal" href="#add-invite-for-form"
+                            class="btn btn-custom btn-sm mx-0 px-3 mt-2 btn-add1 lh19 ms-0 shadow-none with-btn">Save
+                            & Continue <span><img src="~/images/arrow-right-pink.png" /></span></a>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="design-process-section" id="process-tab">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 bg-white">
+                    <div class="bg-white">
+                        <h6 class="f16 mt-3">Steps to be following</h6>
+                          <button class="btn btn-custom mt-5 mb-24" style="height:30px; width:166px;">Upload Documents
+                    </button>
+                        <ul class="nav nav-tabs process-model more-icon-preocess  border-bottom-0">
+                            <li role="presentation" class="nav-item">
+                                <a href="#basic_documents" class="nav-link active" data-bs-toggle="tab">
+                                    <i>1</i>
+                                    <span class="float-left">Basic</span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="nav-item">
+                                <a href="#education_documents" class="nav-link" data-bs-toggle="tab">
+                                    <i>2</i>
+                                    <span class="float-left">Education</span>
+                                </a>
+                            </li>
+                              <li role="presentation" class="nav-item">
+                                <a href="#employment_document" class="nav-link" data-bs-toggle="tab">
+                                    <i>3</i>
+                                    <span class="float-left">Employment</span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="nav-item">
+                                <a href="#bank_documents" class="nav-link" data-bs-toggle="tab">
+                                    <i>4</i>
+                                    <span class="float-left">Bank Related</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="tab-content mt-0 p-24">
+                       <div role="tabpanel" class="tab-pane active" id="basic_documents">
+                         <div class="design-process-content mb-24">
+                            <div class="row">
+                                <h4 class=" mb-36" id="basic_documents"> Upload Basic Documents</h4></div>
+                                <div class="row">
+                                     <div class="col-6">
+                            <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span>Self Photograph</p>
+                                 <ul class="modal-list">
+                                      <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                      <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                  </ul>
+                                <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span>Aadhaar Card</p>
+                                        <ul class="modal-list">
+                                            <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                            <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                        </ul>
+                                    </div>
+                            <div class="col-6 modal_bg">
+                                <DIV id="dropzone">
+                                    <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                        <DIV class="dz-message needsclick f16">
+                                            Drag and drop file<BR>
+                                            <SPAN class="note needsclick mb-24">
+                                                Or use Download button.
+                                            </SPAN>  <br>
+                                               <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 12px;" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                        </DIV>
+                                     </FORM>
+                                    </DIV>
+                              </div>
+                         </div>
+                       </div>
+        <div class="design-process-content mb-24">
+                <div class="row">
+                <h4 class=" mb-24" id="basic_document">  Upload Basic Documents</h4>
+                </div>
+                   <div class="row">
+                         <div class="col-6">
+                        <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Self Photograph<span class="text-opt float-end">Data Extracted</span></p>
+                         <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Aadhaar Card<span class="text-opt float-end">Data Extracted</span></p>
+                        </div>
+                          <div class="col-6 modal_bg">
+                              <DIV id="dropzone">
+                                  <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                      <DIV class="dz-message needsclick f16">
+                                          Drag and drop file<BR>
+                                          <SPAN class="note needsclick mb-24">
+                                              Or use Download button.
+                                          </SPAN>  <br>
+                                             <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                      </DIV>
+                                   </FORM>
+                                  </DIV>
+                            </div>
+                      </div>
+                 </div>
+                       </div>
+
+                    <div role="tabpanel" class="tab-pane" id="education_documents">
+                        <div class="design-process-content mb-24">
+                            <div class="row">
+                                <h4 class=" mb-24" id="education_documents">
+                            Upload Education Documents<br /> </h4>
+                            </div>
+                            <div class="row">
+                                    <div class="col-6">
+                                        <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span>10th Marksheet</p>
+                                            <ul class="modal-list">
+                                                <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                                <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                            </ul>
+                                            <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span>12th Marksheet</p>
+                                                    <ul class="modal-list">
+                                                        <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                                    </ul>
+                                                <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> Degree/Diploma</span> </p>
+                                                    <ul class="modal-list">
+                                                    <li> Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                                        <li>Multiple files allowed.</li>
+                                                </ul>
+                                                </div>
+                                        <div class="col-6 modal_bg">
+                                            <DIV id="dropzone">
+                                                <FORM class="dropzone needsclick" style="height:358px;" id="demo-upload" action="/upload">
+                                                    <DIV class="dz-message needsclick f16">
+                                                        Drag and drop file<BR>
+                                                        <SPAN class="note needsclick mb-24">
+                                                            Or use Download button.
+                                                        </SPAN>  <br>
+                                                        <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 24px;" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                                    </DIV>
+                                                </FORM>
+                                                </DIV>
+                                        </div>
+                                    </div>
+                            </div>
+                        <div class="design-process-content mb-24">
+                            <div class="row">
+                            <h4 class=" mb-24" id="education_documents"> Upload Education Documents</h4>
+                            </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>10th Marksheet <span class="text-opt float-end">Data Extracted</span></p>
+                                        <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> 12th Marksheet<span class="text-opt float-end">Data Extracted</span></p>
+                                        <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>  Degree/Diploma<span class="text-opt float-end">Data Extracted</span></p>
+                                    </div>
+                                        <div class="col-6 modal_bg">
+                                            <DIV id="dropzone">
+                                                <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                                    <DIV class="dz-message needsclick f16">
+                                                        Drag and drop file<BR>
+                                                        <SPAN class="note needsclick mb-24">
+                                                            Or use Download button.
+                                                        </SPAN>  <br>
+                                                            <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                                    </DIV>
+                                            </FORM>
+                                        </DIV>
+                                    </div>
+                            </div>
+                        </div>
+                 </div>
+
+                <div role="tabpanel" class="tab-pane" id="employment_documents">
+                        <div class="design-process-content mb-24">
+                        <div class="row">
+                            <h4 class=" mb-24" id="employment_documents">Upload Current Employment Documents</h4>
+                        </div>
+                            <div class="row">
+                                    <div class="col-6">
+                                        <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span> Appointment Letter</p>
+                                            <ul class="modal-list">
+                                                <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                                <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                            </ul>
+                                            <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span> Offer Letter</p>
+                                                    <ul class="modal-list">
+                                                        <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                                    </ul>
+                                                <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"></span> Experience Letter</p>
+                                                    <ul class="modal-list">
+                                                    <li> Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                                        <li>Multiple files allowed.</li>
+                                                </ul>
+                                                <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span> Salary Slip </p>
+                                                    <ul class="modal-list">
+                                                    <li> Last 3 month salary slip in separate files</li>
+                                                        <li> Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                                        <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                                </ul>
+                                                </div>
+                                        <div class="col-6 modal_bg">
+                                            <DIV id="dropzone">
+                                                <FORM class="dropzone needsclick" style="height:358px;" id="demo-upload" action="/upload">
+                                                    <DIV class="dz-message needsclick f16">
+                                                        Drag and drop file<BR>
+                                                        <SPAN class="note needsclick mb-24">
+                                                            Or use Download button.
+                                                        </SPAN>  <br>
+                                                        <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 24px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                                    </DIV>
+                                                </FORM>
+                                        </DIV>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="design-process-content mb-24">
+                            <div class="row">
+                              <h4 class=" mb-24" id="employment_documents">Upload Current Employment Documents<br /> </h4>
+                             </div>
+                                 <div class="row">
+                                       <div class="col-6">
+                                        <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Appointment Letter<span class="text-opt float-end">Data Extracted</span></p>
+                                         <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Offer Letter<span class="text-opt float-end">Data Extracted</span></p>
+                                           <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span> Experience Letter <span class="text-opt float-end">Data Extracted</span></p>
+                                             <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Salary Slip <span class="text-opt float-end">Data Extracted</span></p>
+                                                  </div>
+                                          <div class="col-6 modal_bg">
+                                              <DIV id="dropzone">
+                                                  <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                                      <DIV class="dz-message needsclick f16">
+                                                          Drag and drop file<BR>
+                                                          <SPAN class="note needsclick mb-24">
+                                                              Or use Download button.
+                                                          </SPAN>  <br>
+                                                             <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                                      </DIV>
+                                                   </FORM>
+                                                  </DIV>
+                                         </div>
+                                  </div>
+                         </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="bank_documents">
+             <div class="design-process-content mb-24">
+              <div class="row">
+                <h4 class=" mb-24" id="bank_documents">Upload Bank Documents </h4>
+               </div>
+                   <div class="row">
+                         <div class="col-6">
+                            <p class="f16 ms-3 mb-0"> <span><img src="~/images/black-radio.png"> </span>Canceled Cheque Photograph </p>
+                                 <ul class="modal-list">
+                                      <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                      <li> Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                  </ul>
+                                 <p class="f16 ms-3 mb-0"><span><img src="~/images/black-radio.png"> </span> PAN Card</p>
+                                        <ul class="modal-list">
+                                            <li>Acceptable file formats: PDF, PNG, GIF, JPG</li>
+                                            <li>Acceptable file sizes: File sizes to be less than 1 MB</li>
+                                        </ul>
+                                    </div>
+                            <div class="col-6 modal_bg">
+                                <DIV id="dropzone">
+                                    <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                        <DIV class="dz-message needsclick f16">
+                                            Drag and drop file<BR>
+                                            <SPAN class="note needsclick mb-24">
+                                                Or use Download button.
+                                            </SPAN>  <br>
+                                               <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom: 24px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                        </DIV>
+                                     </FORM>
+                                    </DIV>
+                               </div>
+                         </div>
+                   </div>
+             <div class="design-process-content mb-24">
+                <div class="row">
+                     <h4 class=" mb-24" id="bank_documents">Upload Bank Documents </h4>
+                    </div>
+                <div class="row">
+                      <div class="col-6">
+                         <p class="f16 mb-24"> <span><img src="~/images/green-radio.png"> </span>Canceled Cheque Photograph <span class="text-opt float-end">Data Extracted</span></p>
+                              <p class="f16 mb-0"><span><img src="~/images/green-radio.png"> </span> PAN Card <span class="text-opt float-end">Data Extracted</span></p>
+                          </div>
+                          <div class="col-6 modal_bg">
+                             <DIV id="dropzone">
+                                 <FORM class="dropzone needsclick" style="height:328px;" id="demo-upload" action="/upload">
+                                     <DIV class="dz-message needsclick f16">
+                                         Drag and drop file<BR>
+                                         <SPAN class="note needsclick mb-24">
+                                             Or use Download button.
+                                         </SPAN>  <br>
+                                            <button class="btn btn-modal_bg" data-bs-dismiss="modal" style="height: 42px; margin-bottom:16px" data-bs-toggle="modal"><img src="~/images/upload-w.png" />Download file </button>
+                                     </DIV>
+                                  </FORM>
+                                 </DIV>
+                            </div>
+                      </div>
+                   </div>
+              </div>
+         </div>
+     </div><!--col-10-->
+    </div>
+</div>
+</section>
+    
